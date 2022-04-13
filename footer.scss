@@ -1,0 +1,29 @@
+@import "scss/def-settings";
+
+footer {
+  .container .row{
+    div{
+      display: flex;
+      flex-direction: column;
+      gap: 1vh;
+      margin-bottom: 5vh;
+    }
+    span{
+      font-weight: 500;
+      a{
+        font-size: large;
+      }
+    }
+  }
+  img{
+    width: 101px;
+    height: 24px;
+  }
+}
+.footer-gray {
+  color: #888;
+
+  &:hover &a {
+    color: #55b;
+  }
+}

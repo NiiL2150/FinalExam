@@ -1,0 +1,221 @@
+@import "scss/def-settings";
+
+.main{
+  div{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+}
+
+.addLink{
+  text-transform: uppercase;
+  border-bottom: 1px solid $select-bg;
+  padding-bottom: 2px;
+}
+
+.addButton{
+  @extend .addLink;
+  background-color: #0000;
+  padding: 2%;
+  padding-left: 8%;
+  padding-right: 8%;
+  border: 1px solid $select-bg;
+  &::after {
+    content: " ❯";
+  }
+  &:hover{
+    background-color: $select-bg;
+    color: $select-color;
+  }
+}
+
+#mainSlider{
+  #firstSlider{
+    .item{
+      img{
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+#mainBanner1{
+  .col{
+    position: relative;
+    img{
+      background-color: #fff;
+      width: 100%;
+    }
+    div{
+      position: absolute;
+      left: 50%;
+      top: 20%;
+      p{
+        margin-bottom: 1%;
+        &:nth-child(1){
+          text-transform: uppercase;
+          font-size: 0.8rem;
+          font-weight: light;
+          color: #555;
+        }
+        &:nth-child(2) {
+          font-size: 1.6rem;
+          font-weight: 500;
+          margin-bottom: 10%;
+        }
+      }
+      a{
+        @extend .addLink;
+        &::after{
+          content: " ❯";
+        }
+      }
+    }
+    &:hover{
+      img{
+        opacity: .7;
+      }
+    }
+  }
+}
+
+#mainDeal{
+  .row{
+    .col{
+      &:nth-child(1){
+        p{
+          font-size: 2rem;
+          font-weight: 500;
+        }
+      }
+      &:nth-child(2){
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+#mainBlog{
+  p{
+    margin: 0;
+    &:nth-child(1){
+      font-size: 2rem;
+      font-weight: 500;
+    }
+    &:nth-child(2){
+      color: $second-color;
+    }
+  }
+
+  .row{
+    .card{
+      padding: 0;
+      border: 0;
+      box-shadow: 0;
+      &:hover{
+        box-shadow: $default-shadow;
+      }
+      .card-body{
+        text-align: center;
+        margin-top: 5vh;
+        *{
+          margin-bottom: 1vh;
+        }
+        .card-subtitle{
+          color: $second-color;
+          font-size: 0.9rem;
+          font-weight: 400;
+        }
+        .card-title{
+          color: $def-color;
+          font-size: 1.4rem;
+          font-weight: 500;
+        }
+        .card-text{
+          color: $second-color;
+          font-size: 0.9rem;
+          font-weight: 400;
+        }
+        .card-link{
+          @extend .addLink;
+          margin-top: 5vh;
+        }
+      }
+    }
+  }
+}
+
+#mainBenefits{
+  .row{
+    .col{
+      div{
+        display: inline-flex;
+        flex-direction: column;
+
+        p{
+          margin: 0;
+          &:nth-child(1){
+            font-size: 1.2rem;
+          }
+          &:nth-child(2) {
+            color: $second-color;
+            font-size: 0.9rem;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}
+
+#mainNewsletter{
+  background-color: $select-bg;
+  color: $select-color;
+  input{
+    width: 100%;
+    padding: 0.6rem;
+    padding-left: 1.2rem;
+    font-size: 1rem;
+    border: 0;
+    outline: 0;
+    
+    &::placeholder{
+      color: $second-color;
+      font-size: 0.9rem;
+      font-weight: 400;
+    }
+  }
+  button{
+    width: 100%;
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 0.2rem;
+    background-color: $def-bg-color;
+
+    &:hover{
+      background-color: $mark-bg;
+    }
+  }
+  .container{
+    .row{
+      div{
+        &:nth-child(1){
+          p{
+            &:nth-child(1){
+              font-size: 1.5rem;
+              font-weight: 600;
+            }
+            &:nth-child(2){
+              color: $mark-bg;
+              font-weight: 300;
+            }
+          }
+        }
+      }
+    }
+  }
+}

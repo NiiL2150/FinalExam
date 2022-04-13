@@ -1,0 +1,266 @@
+@charset "UTF-8";
+* {
+  font-family: Poppins;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+*::-moz-selection {
+  background: #142b6f;
+  color: #fff;
+}
+
+*::selection {
+  background: #142b6f;
+  color: #fff;
+}
+
+mark {
+  background: #fdda05;
+  color: #000;
+}
+
+a {
+  color: #142b6f;
+  text-decoration: none;
+}
+
+body {
+  color: #000;
+  background-color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+hr {
+  background-color: #aaa;
+}
+
+.main div {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.addLink, .addButton, #mainBanner1 .col div a, #mainBlog .row .card .card-body .card-link {
+  text-transform: uppercase;
+  border-bottom: 1px solid #142b6f;
+  padding-bottom: 2px;
+}
+
+.addButton {
+  background-color: #0000;
+  padding: 2%;
+  padding-left: 8%;
+  padding-right: 8%;
+  border: 1px solid #142b6f;
+}
+
+.addButton::after {
+  content: " ❯";
+}
+
+.addButton:hover {
+  background-color: #142b6f;
+  color: #fff;
+}
+
+#mainSlider #firstSlider .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#mainBanner1 .col {
+  position: relative;
+}
+
+#mainBanner1 .col img {
+  background-color: #fff;
+  width: 100%;
+}
+
+#mainBanner1 .col div {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+}
+
+#mainBanner1 .col div p {
+  margin-bottom: 1%;
+}
+
+#mainBanner1 .col div p:nth-child(1) {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: light;
+  color: #555;
+}
+
+#mainBanner1 .col div p:nth-child(2) {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 10%;
+}
+
+#mainBanner1 .col div a::after {
+  content: " ❯";
+}
+
+#mainBanner1 .col:hover img {
+  opacity: .7;
+}
+
+#mainDeal .row .col:nth-child(1) p {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+#mainDeal .row .col:nth-child(2) img {
+  width: 100%;
+}
+
+#mainBlog p {
+  margin: 0;
+}
+
+#mainBlog p:nth-child(1) {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+#mainBlog p:nth-child(2) {
+  color: #aaa;
+}
+
+#mainBlog .row .card {
+  padding: 0;
+  border: 0;
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
+}
+
+#mainBlog .row .card:hover {
+  -webkit-box-shadow: 0 1px 10px 1px #ddd;
+          box-shadow: 0 1px 10px 1px #ddd;
+}
+
+#mainBlog .row .card .card-body {
+  text-align: center;
+  margin-top: 5vh;
+}
+
+#mainBlog .row .card .card-body * {
+  margin-bottom: 1vh;
+}
+
+#mainBlog .row .card .card-body .card-subtitle {
+  color: #aaa;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+#mainBlog .row .card .card-body .card-title {
+  color: #000;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+#mainBlog .row .card .card-body .card-text {
+  color: #aaa;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+#mainBlog .row .card .card-body .card-link {
+  margin-top: 5vh;
+}
+
+#mainBenefits .row .col div {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#mainBenefits .row .col div p {
+  margin: 0;
+}
+
+#mainBenefits .row .col div p:nth-child(1) {
+  font-size: 1.2rem;
+}
+
+#mainBenefits .row .col div p:nth-child(2) {
+  color: #aaa;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+#mainNewsletter {
+  background-color: #142b6f;
+  color: #fff;
+}
+
+#mainNewsletter input {
+  width: 100%;
+  padding: 0.6rem;
+  padding-left: 1.2rem;
+  font-size: 1rem;
+  border: 0;
+  outline: 0;
+}
+
+#mainNewsletter input::-webkit-input-placeholder {
+  color: #aaa;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+#mainNewsletter input:-ms-input-placeholder {
+  color: #aaa;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+#mainNewsletter input::-ms-input-placeholder {
+  color: #aaa;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+#mainNewsletter input::placeholder {
+  color: #aaa;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+#mainNewsletter button {
+  width: 100%;
+  padding: 0.5rem;
+  border: 0;
+  border-radius: 0.2rem;
+  background-color: #fff;
+}
+
+#mainNewsletter button:hover {
+  background-color: #fdda05;
+}
+
+#mainNewsletter .container .row div:nth-child(1) p:nth-child(1) {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#mainNewsletter .container .row div:nth-child(1) p:nth-child(2) {
+  color: #fdda05;
+  font-weight: 300;
+}

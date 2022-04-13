@@ -1,0 +1,106 @@
+* {
+  font-family: Poppins;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+*::-moz-selection {
+  background: #142b6f;
+  color: #fff;
+}
+
+*::selection {
+  background: #142b6f;
+  color: #fff;
+}
+
+mark {
+  background: #fdda05;
+  color: #000;
+}
+
+a {
+  color: #142b6f;
+  text-decoration: none;
+}
+
+body {
+  color: #000;
+  background-color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+hr {
+  background-color: #aaa;
+}
+
+#aboutAbout {
+  background-color: #eee5;
+}
+
+#aboutAbout p {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+#aboutDetail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#aboutDetail p:nth-child(1) {
+  padding-top: 5vh;
+  font-size: 1.5rem;
+}
+
+#aboutDetail p:nth-child(2) {
+  font-size: 0.91rem;
+}
+
+#aboutDetail img {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding-bottom: 5vh;
+}
+
+#aboutAdvantages .row .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#aboutAdvantages .row .col p {
+  color: #aaa;
+}
+
+#aboutAdvantages .row .col p:nth-child(2) {
+  font-size: 1.2rem;
+}
+
+#aboutAdvantages .row .col p:nth-child(3) {
+  font-size: 0.9rem;
+}
