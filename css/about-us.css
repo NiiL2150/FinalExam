@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: Poppins;
   -webkit-transition: all 300ms;
@@ -39,6 +40,76 @@ body {
 
 hr {
   background-color: #aaa;
+}
+
+.addLink, .addButton {
+  text-transform: uppercase;
+  border-bottom: 1px solid #142b6f;
+  padding-bottom: 2px;
+}
+
+.addLink.yellow, .yellow.addButton {
+  border-color: #fdda05;
+}
+
+.addButton {
+  background-color: #0000;
+  padding: 2%;
+  padding-left: 8%;
+  padding-right: 8%;
+  border: 2px solid #142b6f;
+}
+
+.addButton::after {
+  content: " ❯";
+}
+
+.addButton:hover {
+  background-color: #142b6f;
+  color: #fff;
+}
+
+.addButton.yellow {
+  color: #fdda05;
+  border-color: #fdda05;
+}
+
+.addButton.yellow:hover {
+  background-color: #fdda05;
+  color: #000;
+}
+
+.addInput {
+  width: 100%;
+  padding: 0.6rem;
+  padding-left: 1.2rem;
+  font-size: 1rem;
+  border: 0;
+  outline: 0;
+}
+
+.addInput::-webkit-input-placeholder {
+  color: #aaa;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.addInput:-ms-input-placeholder {
+  color: #aaa;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.addInput::-ms-input-placeholder {
+  color: #aaa;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.addInput::placeholder {
+  color: #aaa;
+  font-size: 0.9rem;
+  font-weight: 400;
 }
 
 #aboutAbout {
@@ -103,4 +174,87 @@ hr {
 
 #aboutAdvantages .row .col p:nth-child(3) {
   font-size: 0.9rem;
+}
+
+#aboutBusiness {
+  position: relative;
+}
+
+#aboutBusiness img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+#aboutBusiness .col {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  top: 35%;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+#aboutBusiness .col p:nth-child(2) {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+#aboutBusiness .col:nth-child(2) {
+  left: 10%;
+}
+
+#aboutBusiness .col:nth-child(3) {
+  left: 32%;
+}
+
+#aboutBusiness .col:nth-child(4) {
+  left: 54%;
+}
+
+#aboutBusiness .col:nth-child(5) {
+  left: 76%;
+}
+
+#aboutTeam {
+  text-align: center;
+}
+
+#aboutTeam h3 {
+  font-weight: 400;
+  margin-bottom: 5vh;
+}
+
+#aboutTeam .row {
+  margin-bottom: 5vh;
+}
+
+#aboutTeam .row .col {
+  padding: 0;
+  background-color: #fff;
+}
+
+#aboutTeam .row .col:hover img {
+  opacity: .7;
+}
+
+#aboutTeam a {
+  margin-top: 5vh;
+  padding: 2vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+#aboutSponsors {
+  text-align: center;
 }

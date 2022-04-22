@@ -112,12 +112,34 @@ hr {
   font-weight: 400;
 }
 
-header nav {
+#prodlist {
+  margin-bottom: 3vh;
+}
+
+#prodlist .col {
+  padding-bottom: 5vh;
+  text-align: center;
+}
+
+#prodlist .col img {
+  width: 100%;
+}
+
+#prodlist .col a {
+  margin-bottom: 5vh;
+}
+
+#prodlist .col:hover {
   -webkit-box-shadow: 0 1px 10px 1px #ddd;
           box-shadow: 0 1px 10px 1px #ddd;
 }
 
-header nav #navbarNav a {
-  font-size: 1.4rem;
-  font-weight: 600;
+#prodlist .col:hover img {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+
+#loadmore {
+  padding: 1%;
+  margin-bottom: 1%;
 }

@@ -47,4 +47,69 @@
   }
 }
 
+#aboutBusiness {
+  position: relative;
+  img{
+    object-fit: cover;
+    width: 100%;
+  }
+  .col {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      top: 35%;
+      color: $select-color;
+      font-size: 1.7rem;
+      font-weight: 400;
 
+      p:nth-child(2){
+      font-size: 1rem;
+      font-weight: 300;
+      }
+
+      &:nth-child(2){
+        left: 10%;
+      }
+      &:nth-child(3) {
+        left: 32%;
+      }
+      &:nth-child(4) {
+        left: 54%;
+      }
+      &:nth-child(5) {
+        left: 76%;
+      }
+    }
+}
+
+#aboutTeam{
+  text-align: center;
+  h3{
+    font-weight: 400;
+    margin-bottom: 5vh;
+  }
+  .row{
+    margin-bottom: 5vh;
+    .col{
+      &:hover {
+        img {
+          opacity: .7;
+        }
+      }
+      padding: 0;
+      background-color: $def-bg-color;
+    }
+  }
+  a{
+    margin-top: 5vh;
+    padding: 2vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+  }
+}
+
+#aboutSponsors{
+  text-align: center;
+}

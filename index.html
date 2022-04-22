@@ -8,7 +8,6 @@
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/jQuery.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
         <script src="js/script.js"></script>
 
         <style>
@@ -19,23 +18,91 @@
         <link rel="stylesheet" href="css/header.css" />
         <link rel="stylesheet" href="css/footer.css" />
         <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/owl.theme.default.min.css" />
         <title>Sunglasses</title>
     </head>
     <body>
         <header class="sticky-top"></header>
 
+        <div id="bottomPopup">
+            <img id="bottomPopupImage" src="img/dealOfTheDay.png" />
+            <p>
+                Someone has bought
+                <a id="bottomPopupText" href="product?id=1" class="addLink"></a>
+            </p>
+        </div>
+
+        <div id="popup" class="hidden">
+            <h1>GET <mark>25%</mark> OFF</h1>
+            <p>
+                Subscribe to the Molla eCommerce newsletter to receive timely
+                updates from your favorite products
+            </p>
+            <div>
+                <input
+                    type="text"
+                    id="namePopUp"
+                    class="addInput"
+                    placeholder="Enter your name"
+                />
+            </div>
+            <div>
+                <input
+                    type="email"
+                    id="emailPopUp"
+                    class="addInput"
+                    placeholder="Enter your email"
+                />
+            </div>
+            <div>
+                <button id="subscribePopUp" class="addButton">Subscribe</button>
+            </div>
+            <input type="checkbox" id="showPopup" checked />
+            <label>Show popup next time</label>
+        </div>
+
+        <div id="blackout" class="hidden"></div>
+
         <div id="mainSlider" class="main">
-            <div  class="container-fluid">
-                <div id="firstSlider" class="owl-carousel owl-theme">
-                    
-                            <div class="item">
-                                <img src="img/slide1.png" />
-                            </div>
-                            <div class="item">
-                                <img src="img/slide2.png" />
-                            </div>
+            <div class="container-fluid m-0">
+                <div id="firstSlider" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/slide1.png" class="d-block" />
+                            <p>SEASONAL PICKS</p>
+                            <p>The Perfect Summer Vibe</p>
+                            <p>Extra 20% off</p>
+                            <a href="#" class="addButton">shop most popular</a>
                         </div>
+                        <div class="carousel-item">
+                            <img src="img/slide2.png" class="d-block" />
+                            <p>Featured Deals</p>
+                            <p>Designer Frames Outlet</p>
+                            <p>up to 40% off</p>
+                            <a href="#" class="addButton">shop most popular</a>
+                        </div>
+                    </div>
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#firstSlider"
+                        data-bs-slide="prev"
+                    >
+                        <span
+                            class="carousel-control-prev-icon"
+                            aria-hidden="true"
+                        ></span>
+                    </button>
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#firstSlider"
+                        data-bs-slide="next"
+                    >
+                        <span
+                            class="carousel-control-next-icon"
+                            aria-hidden="true"
+                        ></span>
+                    </button>
                 </div>
             </div>
 
@@ -72,10 +139,102 @@
             </div>
 
             <!--brands-->
-            <div class="container"></div>
+            <div id="brandsCarouselDiv" class="container py-5">
+                <h3>Shop by Brands</h3>
+                <p>The World's Premium Brands In One Destination.</p>
+                <div
+                    id="brandsCarousel"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                >
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/companies/company1.png" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/companies/company2.png" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/companies/company3.png" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/companies/company4.png" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/companies/company5.png" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/companies/company6.png" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/companies/company7.png" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/companies/company8.png" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/companies/company9.png" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/companies/company10.png" />
+                        </div>
+                    </div>
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#brandsCarousel"
+                        data-bs-slide="prev"
+                    >
+                        <span
+                            class="carousel-control-prev-icon"
+                            aria-hidden="true"
+                        ></span>
+                    </button>
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#brandsCarousel"
+                        data-bs-slide="next"
+                    >
+                        <span
+                            class="carousel-control-next-icon"
+                            aria-hidden="true"
+                        ></span>
+                    </button>
+                </div>
+            </div>
 
-            <!--featured products-->
-            <div class="container"></div>
+            <!--featured products/new arrivals-->
+            <div class="container-fluid bg-light py-5">
+                <div id="featuredProducts" class="container">
+                    <div id="featuredTitle">
+                        <h3>Featured Products</h3>
+                        <p>
+                            Appreciate the view ahead in a pair of affordable
+                            sunglasses.
+                        </p>
+                    </div>
+                    <div
+                        class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 justify-content-center"
+                    ></div>
+                    <div
+                        class="row row-cols-1 row-cols-md-2 justify-content-center sunglasses-gender"
+                    >
+                        <div class="col">
+                            <img src="img/sunglasses-men.png" />
+                            <p>collection</p>
+                            <p>sunglasses<br /><mark>men's</mark></p>
+                            <a href="#" class="addButton">shop now</a>
+                        </div>
+                        <div class="col">
+                            <img src="img/sunglasses-women.png" />
+                            <p>collection</p>
+                            <p>sunglasses<br /><mark>women's</mark></p>
+                            <a href="#" class="addButton">shop now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!--deal of the day-->
             <div class="container-fluid bg-light my-0">
@@ -88,7 +247,7 @@
                             <img src="img/dealOfTheDay.png" />
                             <p>Amelia E. Funk</p>
                             <p>$49.00</p>
-                            <button class="addButton">shop now</button>
+                            <a href="#" class="addButton">shop now</a>
                         </div>
                         <div class="col my-0">
                             <img src="img/dealOfTheDayPhoto.png" />
@@ -204,13 +363,17 @@
                         </div>
                         <div class="col-12 col-md-3">
                             <input
+                                type="text"
                                 id="nameMain"
+                                class="addInput"
                                 placeholder="Enter your name"
                             />
                         </div>
                         <div class="col-12 col-md-3">
                             <input
+                                type="email"
                                 id="emailMain"
+                                class="addInput"
                                 placeholder="Enter your email"
                             />
                         </div>

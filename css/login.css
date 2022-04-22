@@ -112,12 +112,33 @@ hr {
   font-weight: 400;
 }
 
-header nav {
-  -webkit-box-shadow: 0 1px 10px 1px #ddd;
-          box-shadow: 0 1px 10px 1px #ddd;
+.container-fluid {
+  padding: 0;
+  position: relative;
 }
 
-header nav #navbarNav a {
-  font-size: 1.4rem;
-  font-weight: 600;
+#loginbg {
+  width: 100%;
+}
+
+#loginscreen {
+  padding: 3%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  background-color: #fff;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#loginscreen * {
+  margin: 1%;
+}
+
+#loginscreen input {
+  border: 1px solid #eee;
+  background-color: #eeea;
 }

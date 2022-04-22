@@ -1,0 +1,26 @@
+@import "scss/def-settings";
+
+#prodlist{
+  margin-bottom: 3vh;
+  .col{
+    padding-bottom: 5vh;
+    text-align: center;
+    img{
+      width: 100%;
+    }
+    a{
+      margin-bottom: 5vh;
+    }
+    &:hover{
+      box-shadow: $default-shadow;
+      img{
+        transform: scale(1.04);
+      }
+    }
+  }
+}
+
+#loadmore{
+  padding: 1%;
+  margin-bottom: 1%;
+}

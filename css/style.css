@@ -42,15 +42,14 @@ hr {
   background-color: #aaa;
 }
 
-.main div {
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-}
-
 .addLink, .addButton, #mainBanner1 .col div a, #mainBlog .row .card .card-body .card-link {
   text-transform: uppercase;
   border-bottom: 1px solid #142b6f;
   padding-bottom: 2px;
+}
+
+.addLink.yellow, .yellow.addButton, #mainBanner1 .col div a.yellow, #mainBlog .row .card .card-body .yellow.card-link {
+  border-color: #fdda05;
 }
 
 .addButton {
@@ -58,7 +57,7 @@ hr {
   padding: 2%;
   padding-left: 8%;
   padding-right: 8%;
-  border: 1px solid #142b6f;
+  border: 2px solid #142b6f;
 }
 
 .addButton::after {
@@ -70,10 +69,159 @@ hr {
   color: #fff;
 }
 
-#mainSlider #firstSlider .item img {
-  display: block;
+.addButton.yellow {
+  color: #fdda05;
+  border-color: #fdda05;
+}
+
+.addButton.yellow:hover {
+  background-color: #fdda05;
+  color: #000;
+}
+
+.addInput {
   width: 100%;
-  height: auto;
+  padding: 0.6rem;
+  padding-left: 1.2rem;
+  font-size: 1rem;
+  border: 0;
+  outline: 0;
+}
+
+.addInput::-webkit-input-placeholder {
+  color: #aaa;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.addInput:-ms-input-placeholder {
+  color: #aaa;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.addInput::-ms-input-placeholder {
+  color: #aaa;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.addInput::placeholder {
+  color: #aaa;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.main div {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+#bottomPopup {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25vw;
+  height: 15vh;
+  bottom: -20vh;
+  left: 1vh;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 10px 1px #ddd;
+          box-shadow: 0 1px 10px 1px #ddd;
+  z-index: 1019;
+  padding-top: 5vh;
+}
+
+#bottomPopup img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+#bottomPopup.show {
+  bottom: 1vh;
+}
+
+#popup {
+  position: absolute;
+  z-index: 1022;
+  position: fixed;
+  top: 5vh;
+  left: 30vw;
+  width: 40vw;
+  padding: 2vw;
+  text-align: center;
+  background-color: #fff;
+  opacity: 0;
+}
+
+#popup * {
+  padding: 1%;
+}
+
+#popup input[type=text], #popup input[type=email], #popup button {
+  width: 75%;
+  border: 1px solid #cccc;
+}
+
+#popup.show {
+  top: 20vh;
+  opacity: 100%;
+}
+
+#blackout {
+  position: fixed;
+  z-index: 1021;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  background-color: #0007;
+}
+
+#mainSlider #firstSlider .carousel-inner .carousel-item {
+  position: relative;
+}
+
+#mainSlider #firstSlider .carousel-inner .carousel-item img {
+  margin-right: 15vw;
+  margin-left: -15vw;
+}
+
+#mainSlider #firstSlider .carousel-inner .carousel-item p, #mainSlider #firstSlider .carousel-inner .carousel-item a {
+  position: absolute;
+  left: 50%;
+}
+
+#mainSlider #firstSlider .carousel-inner .carousel-item p:nth-child(2), #mainSlider #firstSlider .carousel-inner .carousel-item a:nth-child(2) {
+  top: 20%;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+#mainSlider #firstSlider .carousel-inner .carousel-item p:nth-child(3), #mainSlider #firstSlider .carousel-inner .carousel-item a:nth-child(3) {
+  top: 25%;
+  font-size: 4.5rem;
+  font-weight: 500;
+  color: #111;
+}
+
+#mainSlider #firstSlider .carousel-inner .carousel-item p:nth-child(4), #mainSlider #firstSlider .carousel-inner .carousel-item a:nth-child(4) {
+  top: 60%;
+  left: 60%;
+  font-size: 4.5rem;
+  font-weight: 500;
+  color: #fdda05;
+  background-color: #111;
+}
+
+#mainSlider #firstSlider .carousel-inner .carousel-item p:nth-child(5), #mainSlider #firstSlider .carousel-inner .carousel-item a:nth-child(5) {
+  left: 60%;
+  top: 80%;
+  padding: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 #mainBanner1 .col {
@@ -114,6 +262,76 @@ hr {
 
 #mainBanner1 .col:hover img {
   opacity: .7;
+}
+
+#brandsCarouselDiv {
+  text-align: center;
+}
+
+#brandsCarouselDiv p {
+  color: #aaa;
+}
+
+#brandsCarouselDiv #brandsCarousel .carousel-inner .carousel-item-end, #brandsCarouselDiv #brandsCarousel .carousel-inner .carousel-item-start {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+#brandsCarouselDiv #brandsCarousel .carousel-inner .carousel-item-end.active, #brandsCarouselDiv #brandsCarousel .carousel-inner .carousel-item-next {
+  -webkit-transform: translateX(14%);
+          transform: translateX(14%);
+}
+
+#brandsCarouselDiv #brandsCarousel .carousel-inner .carousel-item-start.active, #brandsCarouselDiv #brandsCarousel .carousel-inner .carousel-item-prev {
+  -webkit-transform: translateX(-14%);
+          transform: translateX(-14%);
+}
+
+#featuredProducts #featuredTitle {
+  text-align: center;
+}
+
+#featuredProducts #featuredTitle p {
+  color: #aaa;
+}
+
+#featuredProducts .sunglasses-gender .col {
+  position: relative;
+}
+
+#featuredProducts .sunglasses-gender .col:hover img {
+  opacity: .7;
+}
+
+#featuredProducts .sunglasses-gender .col img {
+  width: 100%;
+}
+
+#featuredProducts .sunglasses-gender .col p, #featuredProducts .sunglasses-gender .col a {
+  position: absolute;
+  top: 0;
+  left: 65%;
+  text-transform: uppercase;
+}
+
+#featuredProducts .sunglasses-gender .col p:nth-child(2), #featuredProducts .sunglasses-gender .col a:nth-child(2) {
+  top: 25%;
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #aaa;
+}
+
+#featuredProducts .sunglasses-gender .col p:nth-child(3), #featuredProducts .sunglasses-gender .col a:nth-child(3) {
+  top: 35%;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#featuredProducts .sunglasses-gender .col p:nth-child(4), #featuredProducts .sunglasses-gender .col a:nth-child(4) {
+  top: 65%;
+  padding: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 #mainDeal .row .col:nth-child(1) p {
@@ -208,39 +426,6 @@ hr {
 #mainNewsletter {
   background-color: #142b6f;
   color: #fff;
-}
-
-#mainNewsletter input {
-  width: 100%;
-  padding: 0.6rem;
-  padding-left: 1.2rem;
-  font-size: 1rem;
-  border: 0;
-  outline: 0;
-}
-
-#mainNewsletter input::-webkit-input-placeholder {
-  color: #aaa;
-  font-size: 0.9rem;
-  font-weight: 400;
-}
-
-#mainNewsletter input:-ms-input-placeholder {
-  color: #aaa;
-  font-size: 0.9rem;
-  font-weight: 400;
-}
-
-#mainNewsletter input::-ms-input-placeholder {
-  color: #aaa;
-  font-size: 0.9rem;
-  font-weight: 400;
-}
-
-#mainNewsletter input::placeholder {
-  color: #aaa;
-  font-size: 0.9rem;
-  font-weight: 400;
 }
 
 #mainNewsletter button {
