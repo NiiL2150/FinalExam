@@ -22,7 +22,6 @@ blackout.onclick = function () {
 };
 
 if (getCookies("showPopUp") != "false") {
-    console.log(getCookies("showPopUp"));
     setTimeout(() => {
         popup.classList.remove("hidden");
         blackout.classList.remove("hidden");
@@ -59,7 +58,7 @@ setInterval(() => {
         });
         */
         console.log(x);
-        bottomPopupImage.src = `img/glasses/glasses${getRandomInt(7)}.png`;
+        bottomPopupImage.src = `img/glasses/glasses${x.data[0].id % 8}.png`;
         bottomPopupText.innerText = x.data[0].title;
         bottomPopupText.href = `product.html?id=${x.data[0].id}`;
         bottomPopup.classList.add("show");

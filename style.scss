@@ -76,6 +76,9 @@
         p, a{
         position: absolute;
         left: 50%;
+        @media (max-width: 1024px) {
+          left: 0%;
+        }
         &:nth-child(2){
           top: 20%;
             font-size: 0.9rem;
@@ -94,6 +97,9 @@
             font-weight: 500;
             color: $mark-bg;
             background-color: #111;
+            @media (max-width: 1024px) {
+              left: 0%;
+            }
           }
           &:nth-child(5) {
             left:60%;
@@ -101,6 +107,9 @@
             padding: 2%;
             padding-top: 1%;
             padding-bottom: 1%;
+            @media (max-width: 1024px) {
+              left: 0%;
+            }
           }
         }
       }

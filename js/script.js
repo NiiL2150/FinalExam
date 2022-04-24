@@ -12,6 +12,10 @@ $(document).ready(function () {
     initLoad();
 });
 
+function idIsInteger(stringid) {
+    return /^\d+$/.test(stringid);
+}
+
 function encryptMessage(message) {
     if (typeof message !== "string") {
         return;

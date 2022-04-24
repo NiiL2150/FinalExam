@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jQuery.min.js"></script>
+        <script src="js/script.js"></script>
+
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+        </style>
+
+        <link rel="icon" href="img/minilogo.png" type="image/icon type" />
+        <link rel="stylesheet" href="css/header.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/product.css" />
+        <title id="headProductTitle">Product</title>
+    </head>
+    <body>
+        <header class="sticky-top"></header>
+
+        <div class="container">
+          <div class="row row-cols-1 row-cols-lg-2">
+            <div class="col">
+              <img id="productImage" src="">
+            </div>
+            <div class="col">
+              <h2 id="productTitle">Sunglasses</h3>
+              <p>Vendor: Molla</p>
+              <h4 id="productPrice">$00.00</h5>
+              <p id="productDescription">Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed lectus.</p>
+                <div id="productTimer">
+                  <img id="productTimerImage" src="img/alarm-clock.png">
+                  <span id="productTimerString">Offer ends in 00:00:00</span>
+                </div>
+                <p>Hurry! Only <mark>12</mark> left in stock.</p>
+                <div id="stockBar">
+                  <div id="haveBar"></div>
+                </div>
+                <div>
+                  <input type="number">
+                  <button id="addToCartButton" class="addButton blue">
+                    <img src="img/add-cart.svg"></img>
+                    <span>Add to cart</span>
+                  </button>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="bg-light py-5"></footer>
+
+        <script src="js/product.js"></script>
+    </body>
+</html>
